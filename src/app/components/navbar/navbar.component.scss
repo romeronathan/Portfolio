@@ -1,12 +1,11 @@
 @import "../../../styles.scss";
 .holder {
-  box-shadow: 0 0 15px rgb(99 114 130 / 30%);
   width: 100%;
 }
 .navbar {
   display: flex;
   height: 84px;
-  max-width: 80vw !important;
+  max-width: 95vw !important;
   margin: 0 auto;
   align-items: center;
   z-index: 1;
@@ -75,11 +74,11 @@
 
 /* Underline From Center */
 .nav-link {
-  font-family: "Questrial", sans-serif;
+font-family: 'Zen Kaku Gothic New', sans-serif;
   font-weight: 800;
-  margin-left: 40px;
+  margin-left: 12px;
   color: #000000;
-  font-size: 22px;
+  font-size: 20px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   overflow: hidden;
@@ -88,6 +87,11 @@
   display: inline-block;
   vertical-align: middle;
 
+}
+.nav-link:hover {
+  color: #000000;
+  text-decoration: none;
+  opacity: 0.5;
 }
 
 

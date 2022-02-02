@@ -15,8 +15,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
     this.links = [
       { name: 'Home', href: '/' },
-      { name: 'About', href: '/about' },
-      { name: 'News & Articles', href: '/news-&-research' },
+      { name: 'Work', href: '/about' },
+      { name: 'About', href: '/news-&-research' },
       { name: 'Contact', href: '/contact' },
     ];
   }
