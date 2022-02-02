@@ -1,0 +1,118 @@
+@import "../../../styles.scss";
+.holder {
+  box-shadow: 0 0 15px rgb(99 114 130 / 30%);
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  height: 84px;
+  max-width: 80vw !important;
+  margin: 0 auto;
+  align-items: center;
+  z-index: 1;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  @include mobile {
+    height: 50px !important;
+  }
+
+  @include tablets {
+    height: 60px !important;
+  }
+
+  @include very-small-screens {
+    width: 50px !important;
+  }
+}
+
+.logo-container {
+  align-self: flex-start;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-container {
+  display: flex;
+  height: 100%;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  align-self: flex-end;
+  float: right;
+  align-items: center;
+
+  @include very-small-screens {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  @include tablets {
+    display: none;
+  }
+  @include navbar-sizer {
+    display: none;
+  }
+}
+
+.logo {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 12vw;
+  transition: ease 0.2s;
+  max-width: 300px;
+  min-width: 200px;
+}
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Underline From Center */
+.nav-link {
+  font-family: "Questrial", sans-serif;
+  font-weight: 800;
+  margin-left: 40px;
+  color: #000000;
+  font-size: 22px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  transition: ease 0.3s !important;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+
+.button-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  align-self: flex-end;
+
+  @include navbar-hamburger {
+    display: none;
+  }
+}
+
+
+
+.hamburger {
+  font-size: 2.5rem;
+  vertical-align: top;
+  font-weight: 100;
+}
+.white {
+  color: white;
+
+}
+.hamburger:hover {
+
+}

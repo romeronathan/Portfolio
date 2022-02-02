@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+@mixin very-small-screens {
+    @media (max-width: 200px) {
+      @content;
+    }
+  }
+@mixin mobile {
+    @media (min-width: 200px) and (max-width: 480px) {
+      @content;
+    }
+  }
+  @mixin tablets {
+    @media (min-width: 481px) and (max-width: 768px) {
+      @content;
+    }
+  }
+  @mixin small-screens {
+    @media (min-width: 769px) and (max-width: 1024px) {
+      @content;
+    }
+  }
+  @mixin column-lg-break {
+    @media (min-width: 0px) and (max-width: 992px) {
+      @content;
+    }
+  }
+  @mixin large-screens {
+    @media (min-width: 1025px) {
+      @content;
+    }
+}
+@mixin navbar-sizer {
+    @media (max-width:1150px) {
+      @content;
+    }
+  }
+  @mixin navbar-hamburger {
+    @media (min-width:1150px) {
+      @content;
+    }
+}
