@@ -1,13 +1,28 @@
 .home-holder {
-    background-color: black;
-    height: 100vh;
+  
     padding: 0 !important;
     margin: 0 !important;
+    
+    
+
 }
+
 h1 {
-    color: white;
     font-size: 3rem;
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+img, .hero-box {
+    margin: 0 auto !important;
+}
+.hero-box {
+    width: 100%;
+
+}
+img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }
