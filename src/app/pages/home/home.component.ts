@@ -7,15 +7,16 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   i: number = 0;
-  doc: any;
+  imgDoc: any;
+  containerDoc: any;
   constructor(private element: ElementRef) { }
 
  
 
   ngOnInit(): void {
     window.scrollTo(0, 0);
-    this.doc =  document.getElementById('undraw-picture')!;
- 
+    this.imgDoc =  document.getElementById('undraw-picture')!;
+    this.containerDoc = document.getElementById('hidden-box')!;
      
    
    
@@ -25,8 +26,8 @@ export class HomeComponent implements OnInit {
   
     if(this.i <= 1000 || this.i > 0) {
 
-      if(this.i > 800) {
-        this.i = 800;
+      if(this.i > 900) {
+        this.i = 900;
 
       } else if (this.i < 0) {
         this.i = 0;
@@ -37,35 +38,58 @@ export class HomeComponent implements OnInit {
 
   
     if(this.i < 100) { 
-      this.doc.setAttribute(
+      this.imgDoc.setAttribute(
        "src", "../../../assets/svg-scroll-images/grouped.svg");
+       this.containerDoc.setAttribute(
+        "style", "opacity: 0;");
     }else  if(this.i < 200) {
-      this.doc.setAttribute(
+      this.imgDoc.setAttribute(
        "src", "../../../assets/svg-scroll-images/grouped2.svg");
+       this.containerDoc.setAttribute(
+        "style", "opacity: 0;");
      }
      else  if(this.i < 300) {
-      this.doc.setAttribute(
+      this.imgDoc.setAttribute(
       "src", "../../../assets/svg-scroll-images/grouped3.svg");
+      this.containerDoc.setAttribute(
+        "style", "opacity: 0;");
     }
     else  if(this.i < 400) {
-      this.doc.setAttribute(
+      this.imgDoc.setAttribute(
       "src", "../../../assets/svg-scroll-images/grouped4.svg");
+      this.containerDoc.setAttribute(
+        "style", "opacity: 0;");
     }
     else  if(this.i < 500) {
-      this.doc.setAttribute(
+      this.imgDoc.setAttribute(
       "src", "../../../assets/svg-scroll-images/grouped5.svg");
+      this.containerDoc.setAttribute(
+        "style", "opacity: 0;");
     }
     else  if(this.i < 600) {
-      this.doc.setAttribute(
+      this.imgDoc.setAttribute(
       "src", "../../../assets/svg-scroll-images/grouped6.svg");
+      this.containerDoc.setAttribute(
+        "style", "opacity: 0;");
     }
     else  if(this.i < 700) {
-      this.doc.setAttribute(
+      this.imgDoc.setAttribute(
       "src", "../../../assets/svg-scroll-images/grouped7.svg");
+      this.containerDoc.setAttribute(
+        "style", "opacity: 0;");
     }
     else  if(this.i < 800) {
-      this.doc.setAttribute(
+      this.imgDoc.setAttribute(
       "src", "../../../assets/svg-scroll-images/grouped8.svg");
+      this.containerDoc.setAttribute(
+        "style", "opacity: 0;");
+        
+    }
+    else  if(this.i < 900) {
+      this.imgDoc.setAttribute(
+      "src", "../../../assets/svg-scroll-images/grouped9.svg");
+      this.containerDoc.setAttribute(
+        "style", "opacity: 1;");
     }
   }
   }
